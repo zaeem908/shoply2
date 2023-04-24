@@ -1,6 +1,9 @@
 import React from 'react'
+import { useCounterStore } from '../store'
 
-const menware = () => {
+const Menware = () => {
+  const {increment} = useCounterStore()
+
   return (
     <div className="grid grid-cols-4 w-full h-[35rem] gap-3">
 
@@ -9,7 +12,7 @@ const menware = () => {
           <p className="font-bold">HP Shoulder Bag</p>
           <p>premium design, hig quality materials and stiching 1 year official warranty by brand</p>
          <p className="text-green-800 text-xl m-2 font-bold">70$</p>
-          <button className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
+          <button  onClick={increment}  className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
         </div>  
 
          <div className="text-center m-4 h-min rounded-3xl shadow-xl hover:bg-gray-100">
@@ -17,7 +20,7 @@ const menware = () => {
           <p className="font-bold">ZARA Shirt</p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
          <p className="text-green-800 text-xl m-2 font-bold">30$</p>
-          <button className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
+          <button  onClick={increment}  className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
         </div>
 
          <div className="text-center m-4 h-min rounded-3xl shadow-xl hover:bg-gray-100">
@@ -25,7 +28,7 @@ const menware = () => {
           <p className="font-bold">JORDAN jeans</p>
           <p>premium design, hig quality materials and stiching 1 year official warranty by brand</p>
          <p className="text-green-800 text-xl m-2 font-bold">100$</p>
-          <button className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
+          <button  onClick={increment}  className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
         </div>
 
          <div className="text-center m-4 h-min rounded-3xl shadow-xl hover:bg-gray-100">
@@ -33,11 +36,11 @@ const menware = () => {
           <p className="font-bold">GUCCI coat</p>
           <p>premium design, hig quality materials and stiching 1 year official warranty by brand</p>
          <p className="text-green-800 text-xl m-2 font-bold">50$</p>
-          <button className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
+          <button onClick={increment} className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
 
         </div>
     </div>
   )
 }
 
-export default menware
+export default Menware
