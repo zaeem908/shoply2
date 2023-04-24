@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useCounterStore } from '../store';
+import { useCounterStore } from '../store/store';
 
 
 const Header = () => {
