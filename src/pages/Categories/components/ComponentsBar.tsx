@@ -1,24 +1,19 @@
-import React, { useState } from 'react'
-import Header from '../components/header'
-import Menware from '../components/menware'
-import Electronics from '../components/electronics'
-import Cosmetics from '../components/cosmetics'
-import GraphicsCards from '../components/GraphicsCards'
-import Footer from '../components/footer'
-import BestSellers from '../components/bestSellers'
+import React,{useState} from 'react'
+import Menware from '../../../components/menware'
+import Cosmetics from '../../../components/cosmetics'
+import GraphicsCards from '../../../components/GraphicsCards'
+import Electronics from '../../../components/electronics'
 import { Link } from 'react-router-dom'
 
-const Categories = () => {
+const ComponentsBar = () => {
     const [component,setComponent] = useState(null);
 
     function showComponent(comp:any) {
        setComponent(comp)
     }
-
   return (
     <div>
-      <Header/>
-      <div className='flex justify-center'>
+           <div className='flex justify-center'>
         <button onClick={() => showComponent('fabric')} className=' bg-gray-200 p-3 m-2 rounded hover:bg-gray-500 hover:text-white'>Fabrics</button>
         <button onClick={() => showComponent('cosmetic')} className=' bg-gray-200 p-3 m-2 rounded hover:bg-gray-500 hover:text-white'>Cosmetics</button>
         <button onClick={() => showComponent('graphic')} className=' bg-gray-200 p-3 m-2 rounded hover:bg-gray-500 hover:text-white'>Graphics Cards</button>
@@ -31,12 +26,8 @@ const Categories = () => {
            {component === 'graphic' && <GraphicsCards/>}
            {component === 'electronic' && <Electronics/>}
       </div>
-      <BestSellers/>
-      <Footer/>
     </div>
   )
 }
 
-export default Categories
-
-
+export default ComponentsBar

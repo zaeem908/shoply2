@@ -1,8 +1,8 @@
-import Main from "./pages/main";
-import Contact from "./pages/contact";
+import Main from "./pages/Main/index.tsx";
+import Contact from "./pages/Contact/index.tsx";
 import { Route,Routes } from "react-router-dom";
-import AllProducts from "./pages/AllProducts.tsx";
-import Categories from "./pages/Categories";
+import AllProducts from "./pages/AllProducts/index.tsx";
+import Categories from "./pages/Categories/index.tsx";
 
 function App() {
   return (

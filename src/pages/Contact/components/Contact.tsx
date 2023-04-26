@@ -1,13 +1,9 @@
-import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import BackButton from "../components/BackButton";
-const contact = () => {
+import React from 'react'
+
+const Contact = () => {
   return (
     <div>
-      <Header />
-      <BackButton/>
-     <h1 className="font-bold text-2xl text-center">We are here to help you</h1>
+          <h1 className="font-bold text-2xl text-center">We are here to help you</h1>
       <div className="grid grid-cols-4 mb-[5rem]">
         <div className="text-center m-10 h-min rounded-3xl border-gray-400 border-2 outline outline-gray-400">
           <p className="text-center p-2 m-3 text-xl font-bold">Returns</p>
@@ -31,9 +27,8 @@ const contact = () => {
         </div>
    
       </div>
-      <Footer/>
     </div>
-  );
-};
+  )
+}
 
-export default contact;
+export default Contact

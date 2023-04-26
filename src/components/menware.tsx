@@ -13,7 +13,7 @@ const Menware = () => {
           <p>premium design, hig quality materials and stiching 1 year official warranty by brand</p>
          <p className="text-green-800 text-xl m-2 font-bold">70$</p>
           <button  onClick={increment}  className="bg-blue-200 hover:bg-blue-600 hover:text-white p-2 rounded-xl m-2">Add to Cart</button>
-        </div>  
+        </div>
 
          <div className="text-center m-4 h-min rounded-3xl shadow-xl hover:bg-gray-100">
           <img src="https://static-01.daraz.pk/p/ab51056da45d4e2e9851915f784da4ac.jpg_720x720.jpg_.webp" alt=""/>
