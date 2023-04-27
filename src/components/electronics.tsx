@@ -1,4 +1,4 @@
-import { useCounterStore } from '../store/store'
+import { useCounterStore } from '../layouts/store/store'
 
 const Electronics = () => {
   const {increment} = useCounterStore()

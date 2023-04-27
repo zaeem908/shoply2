@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCounterStore } from '../store/store'
+import { useCounterStore } from '../layouts/store/store'
 const Cosmetics = () => {
 const {increment} = useCounterStore()
   return (
